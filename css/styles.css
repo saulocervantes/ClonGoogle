@@ -1,0 +1,97 @@
+:root{
+    --blanco:#ffffff;
+    --grisClaro:#cfcfcf
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+/* Navegación */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a{
+    padding: 2rem;
+    gap: 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.87);
+    font-family: arial,sans-serif;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav span{
+    padding: 2rem 2rem 2rem 1rem;
+}
+
+/* Main */
+main{
+    height: 40rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 15rem; */
+    /* height: calc(100% - 560px);
+    max-height: 29rem; */
+    background-color: bisque;
+}
+
+main .contenido-main{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+}
+
+.input-busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--blanco);
+    border-radius: 3rem;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1.8rem;
+}
+
+.input-busqueda svg{
+    /* flex: 1;
+    background-color: blue; */
+}
+
+.input-busqueda input{
+    /* padding: .5rem; */
+    margin: .2rem;
+    border: none;
+    flex: 1;
+    /* background-color: blue; */
+}
+
+.input-busqueda input:focus{
+    outline: none;
+}
+
+.input-busqueda .iconos{}
+
